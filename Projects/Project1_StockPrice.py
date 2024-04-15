@@ -33,3 +33,4 @@ tickerDf=tickerData.history(period='1d',start=startdate,end=enddate)
 st.line_chart(tickerDf[selectchart])
 
 
+
