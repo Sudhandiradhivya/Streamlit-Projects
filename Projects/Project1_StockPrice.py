@@ -25,7 +25,7 @@ selectchart=st.sidebar.selectbox("Select Chart",tickerchart)
 startdate=st.sidebar.date_input("Start Date",datetime.date(2008,1,1))
 enddate=st.sidebar.date_input("End Date",datetime.date.today())
 
-#subheading
+#subheading for title
 sentense="Displayed is the **{}** Price Of **{}**".format(selectchart,select_ticker_sym)
 st.markdown(sentense)
 tickerDf=tickerData.history(period='1d',start=startdate,end=enddate)
